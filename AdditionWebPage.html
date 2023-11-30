@@ -1,0 +1,35 @@
+<html>
+    <body>
+        Addition Of Two Numbers<br><br>
+        Enter The Number 1<input id="num1"type="Number"><br><br>
+        Enter The Number 2<input id="num2"type="number"><br><br>
+        <button id="add">Add</button><br><br>
+        <!-- <button onclick="onAdd()">Add</button><br><br> -->
+        Addition is:<p id="result"></p>
+    </body>
+    <script>
+
+        document.querySelector("#add").addEventListener("click",function(){
+            var num1Elem = document.querySelector("#num1").value;
+            var num2Elem = document.querySelector("#num2").value;
+
+            var num1=parseFloat(num1Elem);
+            var num2=parseFloat(num2Elem);
+
+            var sum = num1 + num2;
+
+            document.querySelector("#result").innerHTML = sum;
+        });
+
+        // function onAdd()
+        // {
+        //     var num1Elem = document.getElementById('num1');
+        //     var num2Elem = document.getElementById('num2');
+        //     var num1 = Number.parseInt(num1Elem.value);
+        //     var num2 = Number.parseInt(num2Elem.value);
+        //     var add = num1+num2;
+        //     var addElem = document.getElementById('result');
+        //     addElem.innerText = add;
+        // }
+    </script>
+</html>
